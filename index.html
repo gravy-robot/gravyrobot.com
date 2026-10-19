@@ -561,6 +561,17 @@ body.is-swapped .swatches li.edge::before{background:var(--bg)}
 .note a:hover{text-decoration-color:var(--pink)}
 .note a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
 
+/* Signed off below, after a breath: the two names link to LinkedIn but
+   stay in the note's muted colour, underlined only on hover, so they read
+   as a signature rather than a second call to action. */
+.note .signature{margin-top:14px}
+.note .signature a{
+  color:inherit;
+  text-decoration-color:transparent;
+  transition:color .2s ease, text-decoration-color .2s ease;
+}
+.note .signature a:hover{color:var(--ink);text-decoration-color:var(--gold)}
+
 /* ── Narrow ── drop the gutters, let the cream fill ── */
 @media (max-width:760px){
   body{background:var(--bg);transition:background-color .6s ease}
@@ -643,6 +654,7 @@ body.is-swapped .swatches li.edge::before{background:var(--bg)}
       <p>Gravy Robot is a human-centered consultancy.</p>
       <p>The gravy is still simmering.</p>
       <p>Want to know when it’s ready? <a href="mailto:hello@gravyrobot.com">hello@gravyrobot.com</a></p>
+      <p class="signature">— <a href="https://www.linkedin.com/in/brandonschauer/" rel="me">Brandon Schauer</a> &amp; <a href="https://www.linkedin.com/in/laura-kirkwood-datta/" rel="me">Laura Kirkwood</a></p>
     </div>
   </main>
 </div>
