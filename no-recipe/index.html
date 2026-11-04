@@ -111,6 +111,10 @@ p, li, h2, h3 { text-wrap: pretty; }
 .cols > div { padding: 20px 20px 22px 0; border-bottom: 1px solid var(--line); min-width: 0; }
 .cols > div + div { padding-left: 20px; border-left: 1px solid var(--line); }
 @media (max-width: 760px) { .cols > div + div { padding-left: 0; border-left: 0; } }
+#people { transform: rotate(-2.5deg); margin-top: 40px; border-top: 0; gap: 16px; }
+#people > div, #people > div + div { position: relative; isolation: isolate; padding: 20px 20px 22px; border: 0; }
+/* The bios tilt -2.5deg; their tan cards turn 2deg further, so they sit at -4.5deg. */
+#people > div::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 16px; background: var(--line); transform: rotate(-2deg); }
 .cols ol, .cols ul { margin: 0; padding-left: 20px; }
 .cols li { margin-bottom: 6px; }
 .panel .note { color: var(--muted); }
