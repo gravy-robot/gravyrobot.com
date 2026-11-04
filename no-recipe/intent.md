@@ -25,15 +25,15 @@ While the conversations run (Nov 9 to Dec 22), Brandon and Laura post short disp
 
 ## The conversation (20 minutes, the same shape for everyone)
 
-1. **Standing Questions, about 15 minutes.** The same questions in the same order, sent in advance:
-   - Where in your work is there still no recipe?
+1. **Standing Questions, about 14 minutes, including the welcome.** The same questions in the same order, sent in advance:
+   - What part of your work right now would you hand to a very able intern tomorrow? What stops you?
+   - Where in your work is there still no recipe? Tell me about the last time you ran into it.
    - What does your organization know that nobody has written down?
    - Think of a change you led or lived through that actually stuck. What made it stick?
-   - In 2030, what do you hope is still true about how people work together?
-   - What will AI famously slop and flop on in five years?
-   - Quickfire: one word for AI right now, and one you hope for in 2030.
+   - It’s 2030. What do you hope is still true about how people work together, and what do you hope is gone?
+   - Quickfire: one word for AI right now; one you hope it is by 2030; finish the sentence “the hardest thing about change at work is…”; and what will always be true about people?
 2. **Wild Card, about 3 minutes.** The interviewee picks a suit (People, Futures, Change, Gravy) and a number, and we read the card. Gravy is the suit about the judgment only people bring.
-3. **Handover, about 2 minutes.** "Who should we talk to next?" and "What would you want to ask the others?" Their question becomes a card in a later interviewee's deck.
+3. **Handover, about 3 minutes, including the close.** "Who should we talk to next?" and "What would you want to ask the others?" Their question becomes a card in a later interviewee's deck.
 
 ## Consent
 
