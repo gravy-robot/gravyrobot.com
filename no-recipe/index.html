@@ -318,3 +318,34 @@ footer p { max-width: 70ch; }
   });
 })();
 </script>
+<script type="module">
+// Overnote review layer: loads only with ?review=1, so regular visitors never fetch it.
+if (new URLSearchParams(location.search).get('review') === '1') {
+  const { default: Overnote } = await import('./vendor/overnote.js');
+  // Match the page's palette and type; set here so these variables only exist in review.
+  const theme = document.createElement('style');
+  theme.textContent = `:root {
+    --overnote-font: "IBM Plex Sans", system-ui, sans-serif;
+    --overnote-surface: #FFFFFF; --overnote-surface-muted: #F4F3EE;
+    --overnote-text: #181613; --overnote-text-muted: #5A5650; --overnote-border: #E7E1D0;
+    --overnote-accent: #1C6B4E; --overnote-focus-ring: 0 0 0 3px rgba(28, 107, 78, .3);
+    --overnote-danger: #8E2B22;
+    --overnote-mode-off: #5A5650; --overnote-mode-highlight: #1C6B4E; --overnote-mode-sticky: #A8174D;
+    --overnote-highlight-bg: rgba(244, 194, 27, .35); --overnote-highlight-bg-hover: rgba(244, 194, 27, .55);
+    --overnote-highlight-bg-active: rgba(244, 194, 27, .7); --overnote-highlight-underline: #C99A00;
+    --overnote-sticky-bg: #FDF4D2; --overnote-sticky-header: #F4C21B; --overnote-sticky-text: #181613;
+    --overnote-sticky-border: rgba(24, 22, 19, .18);
+    --overnote-hover-outline: #A8174D; --overnote-hover-fill: rgba(233, 59, 122, .06);
+  }
+  /* Keep the page's link colours off Overnote's own controls */
+  [data-overnote-ui] a, [data-overnote-ui] a:hover { color: var(--overnote-accent); }`;
+  document.head.append(theme);
+  new Overnote({
+    root: '.wrap',
+    author: 'Reviewer',
+    position: 'bottom-right',
+    ignore: '#site-footer, #roux',
+    storageKey: 'overnote-no-recipe',
+  }).init();
+}
+</script>
